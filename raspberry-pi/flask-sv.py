@@ -1,4 +1,5 @@
 from flask import Flask, request
+#curl -i -H "Content-Type: application/json" -X POST -d '{"userId":"1", "username": "fizz bizz"}' http://localhost:8090/post
 app = Flask(__name__)
 
 
