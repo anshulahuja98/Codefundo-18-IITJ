@@ -4,7 +4,7 @@
 void setup() {
  
   Serial.begin(115200);                                  //Serial connection
-  WiFi.begin("null", "patanahi1");   //WiFi connection
+  WiFi.begin("aksh", "akshchordia");   //WiFi connection
  
   while (WiFi.status() != WL_CONNECTED) {  //Wait for the WiFI connection completion
  
@@ -21,7 +21,7 @@ void loop() {
  
    HTTPClient http;    //Declare object of class HTTPClient
  
-   http.begin("http://192.168.31.7:8090/post");      //Specify request destination
+   http.begin("http://192.168.43.75:8090/post");      //Specify request destination
    http.addHeader("Content-Type", "text/plain");  //Specify content-type header
  
    int httpCode = http.POST("Message from nodemcu");   //Send the request
