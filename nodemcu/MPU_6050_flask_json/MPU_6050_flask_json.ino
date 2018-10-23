@@ -1,15 +1,12 @@
 #include <Wire.h>
-
-// MPU6050 Slave Device Address
+#include <ESP8266HTTPClient.h>
+#include <ESP8266WiFi.h>
+#include <ArduinoJson.h>
 const uint8_t MPU6050SlaveAddress = 0x68;
-
-// Select SDA and SCL pins for I2C communication 
 const uint8_t scl = D1;
 const uint8_t sda = D2;
-// sensitivity scale factor respective to full scale setting provided in datasheet 
 const uint16_t AccelScaleFactor = 16384;
 const uint16_t GyroScaleFactor = 131;
-// MPU6050 few configuration register addresses
 const uint8_t MPU6050_REGISTER_SMPLRT_DIV   =  0x19;
 const uint8_t MPU6050_REGISTER_USER_CTRL    =  0x6A;
 const uint8_t MPU6050_REGISTER_PWR_MGMT_1   =  0x6B;
@@ -21,22 +18,28 @@ const uint8_t MPU6050_REGISTER_FIFO_EN      =  0x23;
 const uint8_t MPU6050_REGISTER_INT_ENABLE   =  0x38;
 const uint8_t MPU6050_REGISTER_ACCEL_XOUT_H =  0x3B;
 const uint8_t MPU6050_REGISTER_SIGNAL_PATH_RESET  = 0x68;
-
 int16_t AccelX, AccelY, AccelZ, Temperature, GyroX, GyroY, GyroZ;
-
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Wire.begin(sda, scl);
   MPU6050_Init();
+  WiFi.begin("null", "patanahi1"); 
+  while (WiFi.status() != WL_CONNECTED) 
+  { 
+  delay(500);
+  Serial.println("Waiting for connection");
+  }
 }
-
-void loop() {String final = " ";
-
-  double Ax, Ay, Az, T, Gx, Gy, Gz;
+ 
+void loop() {
+ 
+  if (WiFi.status() == WL_CONNECTED){ 
   
+  double Ax, Ay, Az, T, Gx, Gy, Gz;
+ 
   Read_RawValue(MPU6050SlaveAddress, MPU6050_REGISTER_ACCEL_XOUT_H);
   
-  //divide each with their sensitivity scale factor
+  //divide each with their sensititvity scale factor
   Ax = (double)AccelX/AccelScaleFactor;
   Ay = (double)AccelY/AccelScaleFactor;
   Az = (double)AccelZ/AccelScaleFactor;
@@ -44,7 +47,7 @@ void loop() {String final = " ";
   Gx = (double)GyroX/GyroScaleFactor;
   Gy = (double)GyroY/GyroScaleFactor;
   Gz = (double)GyroZ/GyroScaleFactor;
-
+  
   Serial.print("Ax: "); Serial.print(Ax);
   Serial.print(" Ay: "); Serial.print(Ay);
   Serial.print(" Az: "); Serial.print(Az);
@@ -52,13 +55,46 @@ void loop() {String final = " ";
   Serial.print(" Gx: "); Serial.print(Gx);
   Serial.print(" Gy: "); Serial.print(Gy);
   Serial.print(" Gz: "); Serial.println(Gz);
-final = Ax+Ay+Az+T+Gx+Gy+Gz;
-Serial.println(final);
-
-
+  
+  
+ StaticJsonBuffer<300> JSONbuffer;   //Declaring static JSON buffer
+  
+   JsonObject& JSONencoder = JSONbuffer.createObject(); 
+ 
+   JSONencoder["Sensor type"] = "Acceleration";
+ 
+   JsonArray& values = JSONencoder.createNestedArray("values"); //JSON array
+   values.add(Ax); //Add value to array
+   values.add(Ay); //Add value to array
+   values.add(Az); //Add value to array
+ 
+    JsonArray& timestamps = JSONencoder.createNestedArray("direction1"); //JSON array
+    timestamps.add("x direction"); //Add value to array
+    timestamps.add("y direction"); //Add value to array
+    timestamps.add("z direction"); //Add value to array
+ 
+    char JSONmessageBuffer[300];
+    JSONencoder.prettyPrintTo(JSONmessageBuffer, sizeof(JSONmessageBuffer));
+    Serial.println(JSONmessageBuffer);
+ 
+    HTTPClient http;    //Declare object of class HTTPClient
+ 
+    http.begin("http://192.168.31.123:8090/post");      //Specify request destination
+    http.addHeader("Content-Type", "application/json");  //Specify content-type header
+ 
+    int httpCode = http.POST(JSONmessageBuffer);   //Send the request
+    String payload = http.getString();                                        //Get the response payload
+ 
+    Serial.println(httpCode);   //Print HTTP return code
+    Serial.println(payload);    //Print request response payload
+ 
+    http.end();  //Close connection
+ 
+  } else {
+    Serial.println("Error in WiFi connection");
+  }
   delay(100);
 }
-
 void I2C_Write(uint8_t deviceAddress, uint8_t regAddress, uint8_t data){
   Wire.beginTransmission(deviceAddress);
   Wire.write(regAddress);
