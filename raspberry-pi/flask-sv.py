@@ -12,12 +12,12 @@ URL = "disaster-chain.eastus.cloudapp.azure.com/post"
 @app.route('/post', methods=["POST"])
 def postJsonHandler():
     data = request.get_json()
-    print(data['values')
+    print(data['values'])
     mod_ax= abs(data['values'][0])
     mod_ay= abs(data['values'][1])
     mod_az= abs(data['values'][2])
     data1= {'Ax':data['values'][0],
-            'Ay':data['values'][1]
+            'Ay':data['values'][1],
             'Az':data['values'][2]}
     r= requests.post(url= URL,data= data1)
     print(r)
