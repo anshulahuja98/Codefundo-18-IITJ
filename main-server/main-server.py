@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 from sqlalchemy import create_engine
 import sqlite3
 app = Flask(__name__)
-con = sqlite3.connect('earthquake_data.db')
+#con = sqlite3.connect('earthquake_data.db')
 @app.route('/post', methods=["POST"])
 def postJsonHandler():
     data = request.get_json()
@@ -17,11 +17,10 @@ def postJsonHandler():
             con.commit()
             msg = "Record successfully added"
     except:
-        con.rollback()
-        msg= "error in insert operation"
+        pass
     return ''
 @app.route('/', methods=["GET"])
 def get():
     return render_template('index.html') 
 
-app.run(host='0.0.0.0', port=8090, debug=True)
+app.run(host='0.0.0.0', port=80, debug=True)
