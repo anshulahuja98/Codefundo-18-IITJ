@@ -1,10 +1,8 @@
 from flask import Flask, request, render_template
 from sqlalchemy import create_engine
-from json import dumps
-from flask.ext.jsonpify import jsonify
-import sqlite3 as sql
+import sqlite3
 app = Flask(__name__)
-db_connect = create_engine('sqlite:///earthquake_data.db')
+con = sqlite3.connect('earthquake_data.db')
 @app.route('/post', methods=["POST"])
 def postJsonHandler():
     data = request.get_json()
@@ -14,7 +12,7 @@ def postJsonHandler():
     try:
         with sql.connect("earthquake_data.db") as con:
             cur = con.cursor()
-            cur.execute("INSERT INTO Acceleration (X_dir,Y_dir,Z_dir) 
+            cur.execute("INSERT INTO Acceleration (X_dir,Y_dir,Z_dir)\
                VALUES (?,?,?)",(ax,ay,az) )
             con.commit()
             msg = "Record successfully added"
@@ -26,4 +24,4 @@ def postJsonHandler():
 def get():
     return render_template('index.html') 
 
-
+app.run(host='0.0.0.0', port=8090, debug=True)
