@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 from sqlalchemy import create_engine
 import sqlite3
-app = Flask(__name__)
+app = Flask(__name__,static_url_path='', static_folder='static')
 @app.route('/post', methods=["POST"])
 def postJsonHandler():
     data = request.get_json()
