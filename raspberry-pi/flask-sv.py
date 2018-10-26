@@ -12,6 +12,7 @@ GPIO.setup(33, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(37, GPIO.OUT, initial=GPIO.HIGH)
 
 URL = "http://disaster-chain.eastus.cloudapp.azure.com/post"
+player = vlc.MediaPlayer("/home/pi/CFD-18/raspberry-pi/siren.mp3")
 
 
 @app.route('/post', methods=["POST"])
@@ -28,9 +29,9 @@ def postJsonHandler():
         GPIO.output(31, 1)
         GPIO.output(33, 1)
         GPIO.output(37, 0)
-        player = vlc.MediaPlayer("/home/pi/CFD-18/raspberry-pi/siren.mp3")
-        player.play()
-        time.sleep(24)
+
+        if not player.is_playing():
+            player.play()
     else:
         print("You are safe")
     return ''
