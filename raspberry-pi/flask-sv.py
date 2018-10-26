@@ -7,8 +7,9 @@ import requests
 app = Flask(__name__)
 GPIO.setmode(GPIO.BCM)
 
-GPIO.setup(18, GPIO.OUT, initial=GPIO.LOW)
-GPIO.setup(19, GPIO.OUT, initial=GPIO.LOW)
+GPIO.setup(31, GPIO.OUT, initial=GPIO.LOW)
+GPIO.setup(33, GPIO.OUT, initial=GPIO.LOW)
+GPIO.setup(37, GPIO.OUT, initial=GPIO.HIGH)
 
 URL = "http://disaster-chain.eastus.cloudapp.azure.com/post"
 
@@ -24,8 +25,9 @@ def postJsonHandler():
     print(r)
     if mod_ax > 1.5 or mod_ay > 1.5 or mod_az > 1.5:
         print("Earthquake Detected")
-        GPIO.output(18, GPIO.HIGH)
-        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(31, 1)
+        GPIO.output(33, 1)
+        GPIO.output(37, 0)
         player = vlc.MediaPlayer("/home/pi/CFD-18/raspberry-pi/siren.mp3")
         player.play()
         time.sleep(24)
