@@ -5,7 +5,8 @@ import vlc
 import requests
 
 app = Flask(__name__)
-GPIO.setmode(GPIO.BCM)
+GPIO.cleanup()
+GPIO.setmode(GPIO.BOARD)
 
 GPIO.setup(31, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(33, GPIO.OUT, initial=GPIO.LOW)
@@ -22,16 +23,18 @@ def postJsonHandler():
     mod_ax = abs(data['values'][0])
     mod_ay = abs(data['values'][1])
     mod_az = abs(data['values'][2])
-    r = requests.post(url=URL, json=data)
-    print(r)
-    if mod_ax > 1.5 or mod_ay > 1.5 or mod_az > 1.5:
+    
+    if mod_ax > 1 or mod_ay > 1 or mod_az > 1:
         print("Earthquake Detected")
-        GPIO.output(31, 1)
-        GPIO.output(33, 1)
+           
         GPIO.output(37, 0)
 
         if not player.is_playing():
             player.play()
+        time.sleep(5)
+	GPIO.output(33,1)
+        GPIO.output(31,1)
+    	r = requests.post(url=URL, json=data)
     else:
         print("You are safe")
     return ''
