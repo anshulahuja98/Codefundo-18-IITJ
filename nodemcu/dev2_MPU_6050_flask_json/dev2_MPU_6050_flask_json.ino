@@ -48,8 +48,7 @@ void loop() {
     Gx = (double)GyroX / GyroScaleFactor;
     Gy = (double)GyroY / GyroScaleFactor;
     Gz = (double)GyroZ / GyroScaleFactor;
-    dev_id = 1111;
-
+    dev_id = 2222;
     Serial.print("Ax: "); Serial.print(Ax);
     Serial.print(" Ay: "); Serial.print(Ay);
     Serial.print(" Az: "); Serial.print(Az);
@@ -64,20 +63,20 @@ void loop() {
     JsonObject& JSONencoder = JSONbuffer.createObject();
 
     JSONencoder["Sensor type"] = "Acceleration";
-    JSONencoder["deviceid"]=dev_id;
+    JSONencoder["deviceid"] = dev_id;
 
     JsonArray& values = JSONencoder.createNestedArray("values"); //JSON array
     values.add(Ax); //Add value to array
     values.add(Ay); //Add value to array
     values.add(Az); //Add value to array
     values.add(T);  //Add value to array
-    
+
     JsonArray& timestamps = JSONencoder.createNestedArray("direction1"); //JSON array
     timestamps.add("x direction"); //Add value to array
     timestamps.add("y direction"); //Add value to array
     timestamps.add("z direction"); //Add value to array
     timestamps.add("Temperature"); //Add vaues to array
-    
+
     char JSONmessageBuffer[300];
     JSONencoder.prettyPrintTo(JSONmessageBuffer, sizeof(JSONmessageBuffer));
     Serial.println(JSONmessageBuffer);
@@ -94,16 +93,16 @@ void loop() {
     Serial.println(payload);    //Print request response payload
 
     http.end();  //Close connection
-   http.begin("http://192.168.31.123:8090/get");
-   
-  int httpCode1 = http.GET();            //Send the request
-  String payload_get = http.getString();
-  Serial.println(httpCode1);   //Print HTTP return code
-  Serial.println(payload_get);    //Print request response payload
-  http.end();  //Close connection
-  
+    http.begin("http://192.168.31.123:8090/get");
+
+    int httpCode1 = http.GET();            //Send the request
+    String payload_get = http.getString();
+    Serial.println(httpCode1);   //Print HTTP return code
+    Serial.println(payload_get);    //Print request response payload
+    http.end();  //Close connection
+
   }
-  
+
   else
   {
     Serial.println("Error in WiFi connection");
