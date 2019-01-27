@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotspot mapping</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <style type='text/css'>body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: 'Segoe UI', Helvetica, Arial, Sans-Serif
+    }</style>
+</head>
+<body>
+<div id='printoutPanel'></div>
+<div id='myMap' style='width: 100vw; height: 100vh;'></div>
+<script type='text/javascript'>
+    function loadMapScenario() {
+        console.log("{{ coordinates }}")
+        var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+            /* No need to set credentials if already passed in URL */
+            center: new Microsoft.Maps.Location(26.478011, 73.116044),
+            mapTypeId: Microsoft.Maps.MapTypeId.road,
+            zoom: 15
+        });
+        var position, pin;
+        {% for coordinate in coordinates %}
+            console.log("{{ coordinate.1 }}");
+            position = new Microsoft.Maps.Location{{coordinate[0:2]}};
+            pin = new Microsoft.Maps.Pushpin(position, {title: '{{coordinate[2]}}', text: "Earthquake detected"});
+            map.entities.push(pin);
+        {% endfor %}
+    }
+</script>
+<script type='text/javascript'
+        src='https://www.bing.com/api/maps/mapcontrol?key=AlFh5psFD75Bh1OaCwh-SkKtJ3Zf388MH_98cKmgeWG4ET1CohsUxkUrGn6xn-Ny&callback=loadMapScenario'
+        async defer></script>
+</body>
+</html>
