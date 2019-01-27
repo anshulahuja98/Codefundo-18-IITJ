@@ -59,9 +59,8 @@ def chart():
 def maps():
     with sqlite3.connect("earthquake_data.db") as con:
         cur = con.cursor()
-        # cur.execute("SELECT * FROM Acceleration ")
-        # rows = cur.fetchall()
-        rows = []
+        cur.execute("SELECT * FROM Acceleration ")
+        rows = cur.fetchall()
         cur = con.cursor()
         cur.execute("SELECT * FROM Coordinates ")
         coord_rows = cur.fetchall()
@@ -78,4 +77,4 @@ def maps():
     return render_template('maps.html', values=values, labels=labels, coordinates=coord_rows)
 
 
-app.run(host='0.0.0.0', port=8000, debug=True)
+app.run(host='0.0.0.0', port=80, debug=True)

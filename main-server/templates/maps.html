@@ -25,8 +25,8 @@
         var position, pin;
         {% for coordinate in coordinates %}
             console.log("{{ coordinate.1 }}");
-            position = new Microsoft.Maps.Location{{coordinate}};
-            pin = new Microsoft.Maps.Pushpin(position);
+            position = new Microsoft.Maps.Location{{coordinate[0:2]}};
+            pin = new Microsoft.Maps.Pushpin(position, {title: '{{coordinate[2]}}', text: "Earthquake detected"});
             map.entities.push(pin);
         {% endfor %}
     }
