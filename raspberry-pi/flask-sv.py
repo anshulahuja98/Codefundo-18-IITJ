@@ -11,8 +11,8 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.cleanup()
 GPIO.setup(31, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(33, GPIO.OUT, initial=GPIO.LOW)
-# URL = "http://disaster-chain-1.eastus.cloudapp.azure.com/post"
-URL = "http://192.168.31.7/post"
+URL = "http://disaster-chain-1.eastus.cloudapp.azure.com/post"
+# URL = "http://192.168.31.7/post"
 player = vlc.MediaPlayer("/home/pi/CFD-18/raspberry-pi/siren.mp3")
 x = 0
 y = 0

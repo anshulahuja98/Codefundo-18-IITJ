@@ -2,6 +2,8 @@ from flask import Flask, request, render_template
 import sqlite3
 
 app = Flask(__name__, static_url_path='', static_folder='static')
+
+
 # with sqlite3.connect("earthquake_data.db") as con:
 
 
@@ -28,7 +30,7 @@ def postJsonHandler():
         cur.execute("INSERT INTO Acceleration (X_dir,Y_dir,Z_dir)\
                VALUES (?,?,?)", (ax, ay, az))
         cur.execute("INSERT INTO Coordinates (latitude,longitude)\
-                   VALUES (?,?,?)", (latitude, longitude))
+                   VALUES (?,?)", (latitude, longitude))
 
         con.commit()
         msg = "Record successfully added"
