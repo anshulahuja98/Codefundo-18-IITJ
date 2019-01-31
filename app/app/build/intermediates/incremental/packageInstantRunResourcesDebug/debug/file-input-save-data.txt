@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Fri Oct 26 21:58:29 IST 2018
+1.base=/home/ayush/skinapp/goodskin/app/build/intermediates/assets/debug
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=ASSET
+0.path=model.pb
+0.set=ASSET
+0.base=/home/ayush/skinapp/goodskin/app/build/intermediates/assets/debug
+1.path=labels.txt
