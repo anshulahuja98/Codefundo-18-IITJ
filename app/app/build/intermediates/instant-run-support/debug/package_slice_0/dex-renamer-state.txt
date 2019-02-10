@@ -1,0 +1,4 @@
+#Thu Jan 31 13:09:14 IST 2019
+base.0=/home/ayush/skinapp/goodskin/app/build/intermediates/transforms/dexMerger/debug/57
+path.0=classes.dex
+renamed.0=classes.dex

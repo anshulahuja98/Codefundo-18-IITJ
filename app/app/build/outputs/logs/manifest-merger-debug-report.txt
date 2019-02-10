@@ -1,0 +1,175 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:2:1-29:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/917848d5114cae3a3d7370bc12b42103/AndroidManifest.xml:17:1-31:12
+MERGED from [org.tensorflow:tensorflow-android:1.13.0-rc0] /home/ayush/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.13.0-rc0.aar/7e9f5c6b7922a2e6c9be7e51db5084b0/AndroidManifest.xml:2:1-8:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/ayush/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/7127474d337871b8ae529d385c87cbc9/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1d3fc98772a4ee65c47de7dc1627ed8a/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/8e47ac0bb360043f05dd1819b1887ca2/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bdd3dc68957085d824b5ef9617a0d26a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f5b4d531c03b55baad310f51d88167cc/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/dbd1d76b27ecd7e0ac4f96de944b7bef/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/f4200ddd28090382b4dab2e31abcc9d9/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6acfd105f3a7ac1af4940bb88169ab1/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/9bcfe857b92a2bd12881a1ff3b42840b/AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9d7c1d111f568e11f0cb06d164c1a1f6/AndroidManifest.xml:17:1-30:12
+INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:2:1-29:12
+	package
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:3:5-54
+		INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:2:1-29:12
+		INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:2:1-29:12
+		INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:5:5-65
+	android:name
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:5:22-62
+uses-feature#android.hardware.camera
+ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:7:5-60
+	android:name
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:7:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:8:5-70
+	android:name
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:8:19-67
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:10:22-78
+application
+ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:12:5-27:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/917848d5114cae3a3d7370bc12b42103/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/917848d5114cae3a3d7370bc12b42103/AndroidManifest.xml:25:5-29:19
+MERGED from [org.tensorflow:tensorflow-android:1.13.0-rc0] /home/ayush/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.13.0-rc0.aar/7e9f5c6b7922a2e6c9be7e51db5084b0/AndroidManifest.xml:5:5-6:19
+MERGED from [org.tensorflow:tensorflow-android:1.13.0-rc0] /home/ayush/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.13.0-rc0.aar/7e9f5c6b7922a2e6c9be7e51db5084b0/AndroidManifest.xml:5:5-6:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/ayush/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/7127474d337871b8ae529d385c87cbc9/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/ayush/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/7127474d337871b8ae529d385c87cbc9/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1d3fc98772a4ee65c47de7dc1627ed8a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1d3fc98772a4ee65c47de7dc1627ed8a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/8e47ac0bb360043f05dd1819b1887ca2/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/8e47ac0bb360043f05dd1819b1887ca2/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bdd3dc68957085d824b5ef9617a0d26a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bdd3dc68957085d824b5ef9617a0d26a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f5b4d531c03b55baad310f51d88167cc/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f5b4d531c03b55baad310f51d88167cc/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/dbd1d76b27ecd7e0ac4f96de944b7bef/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/dbd1d76b27ecd7e0ac4f96de944b7bef/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/f4200ddd28090382b4dab2e31abcc9d9/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/f4200ddd28090382b4dab2e31abcc9d9/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6acfd105f3a7ac1af4940bb88169ab1/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6acfd105f3a7ac1af4940bb88169ab1/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/9bcfe857b92a2bd12881a1ff3b42840b/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/9bcfe857b92a2bd12881a1ff3b42840b/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9d7c1d111f568e11f0cb06d164c1a1f6/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9d7c1d111f568e11f0cb06d164c1a1f6/AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:14:9-41
+	android:allowBackup
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:16:9-40
+activity#demo.tensorflow.org.customvision_sample.ClassifierActivity
+ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:17:9-25:20
+	android:screenOrientation
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:19:13-49
+	android:name
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:18:13-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:23:27-74
+activity#demo.tensorflow.org.customvision_sample.DisplayCure
+ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:26:9-49
+	android:name
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:26:19-46
+uses-sdk
+INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/917848d5114cae3a3d7370bc12b42103/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/917848d5114cae3a3d7370bc12b42103/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/ayush/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/7127474d337871b8ae529d385c87cbc9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/ayush/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/7127474d337871b8ae529d385c87cbc9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1d3fc98772a4ee65c47de7dc1627ed8a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1d3fc98772a4ee65c47de7dc1627ed8a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/8e47ac0bb360043f05dd1819b1887ca2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/8e47ac0bb360043f05dd1819b1887ca2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bdd3dc68957085d824b5ef9617a0d26a/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bdd3dc68957085d824b5ef9617a0d26a/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f5b4d531c03b55baad310f51d88167cc/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f5b4d531c03b55baad310f51d88167cc/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/dbd1d76b27ecd7e0ac4f96de944b7bef/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/dbd1d76b27ecd7e0ac4f96de944b7bef/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/f4200ddd28090382b4dab2e31abcc9d9/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/f4200ddd28090382b4dab2e31abcc9d9/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6acfd105f3a7ac1af4940bb88169ab1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6acfd105f3a7ac1af4940bb88169ab1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/9bcfe857b92a2bd12881a1ff3b42840b/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/9bcfe857b92a2bd12881a1ff3b42840b/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9d7c1d111f568e11f0cb06d164c1a1f6/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9d7c1d111f568e11f0cb06d164c1a1f6/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/917848d5114cae3a3d7370bc12b42103/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+		ADDED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/917848d5114cae3a3d7370bc12b42103/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1d3fc98772a4ee65c47de7dc1627ed8a/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/1d3fc98772a4ee65c47de7dc1627ed8a/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/8e47ac0bb360043f05dd1819b1887ca2/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/8e47ac0bb360043f05dd1819b1887ca2/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bdd3dc68957085d824b5ef9617a0d26a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bdd3dc68957085d824b5ef9617a0d26a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f5b4d531c03b55baad310f51d88167cc/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f5b4d531c03b55baad310f51d88167cc/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/dbd1d76b27ecd7e0ac4f96de944b7bef/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/dbd1d76b27ecd7e0ac4f96de944b7bef/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/f4200ddd28090382b4dab2e31abcc9d9/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/f4200ddd28090382b4dab2e31abcc9d9/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6acfd105f3a7ac1af4940bb88169ab1/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6acfd105f3a7ac1af4940bb88169ab1/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/9bcfe857b92a2bd12881a1ff3b42840b/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/9bcfe857b92a2bd12881a1ff3b42840b/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/917848d5114cae3a3d7370bc12b42103/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/917848d5114cae3a3d7370bc12b42103/AndroidManifest.xml:27:13-51
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:2:1-29:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /home/ayush/skinapp/goodskin/app/src/main/AndroidManifest.xml:2:1-29:12 reason: tensorflow.contrib.android requested WRITE_EXTERNAL_STORAGE
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9d7c1d111f568e11f0cb06d164c1a1f6/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9d7c1d111f568e11f0cb06d164c1a1f6/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/ayush/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9d7c1d111f568e11f0cb06d164c1a1f6/AndroidManifest.xml:26:13-58

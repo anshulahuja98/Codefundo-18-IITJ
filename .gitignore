@@ -109,3 +109,6 @@ venv.bak/
 
 # DS_Store
 .DS_Store
+
+# temp save files
+*.save*
