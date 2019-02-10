@@ -79,10 +79,7 @@ void loop() {
 
     char JSONmessageBuffer[300];
     JSONencoder.prettyPrintTo(JSONmessageBuffer, sizeof(JSONmessageBuffer));
-    Serial.println(JSONmessageBuffer);
-
     HTTPClient http;    //Declare object of class HTTPClient
-
     http.begin("http://192.168.31.123:8090/post");      //Specify request destination
     http.addHeader("Content-Type", "application/json");  //Specify content-type header
 
@@ -99,6 +96,10 @@ void loop() {
     String payload_get = http.getString();
     Serial.println(httpCode1);   //Print HTTP return code
     Serial.println(payload_get);    //Print request response payload
+    if (payload_get == "12")
+    {
+      digitalWrite(D8, LOW);
+    }
     http.end();  //Close connection
 
   }
